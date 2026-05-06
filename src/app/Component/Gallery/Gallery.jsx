@@ -7,19 +7,19 @@ import "./Gallery.css";
 
 const images = [
   "/Images/chosejorny3.JPG",
-  "/Images/cargo-shipment-bg-img-1.JPG",
-  "/Images/cargo-shipment-bg-img-2.JPG",
-  "/Images/cargo-shipment-bg-img-3.JPG",
-  "/Images/cargo-shipment-bg-img-2.JPG",
-  "/Images/cargo-shipment-bg-img-2.JPG",
-  "/Images/chosejorny1.JPG",
-  "/Images/chosejorny2.JPG",
-  "/Images/contactpage.JPG",
-  "/Images/hero-bg.JPG",
-  "/Images/leading.JPG",
-  "/Images/chosejorny3.JPG",
-  "/Images/cargo-shipment-bg-img-2.JPG",
-  "/Images/chosejorny3.JPG",
+  "/Images/cargo-shipment-bg-img-1.jpg",
+  "/Images/cargo-shipment-bg-img-2.jpg",
+  "/Images/cargo-shipment-bg-img-3.jpg",
+  "/Images/cargo-shipment-bg-img-2.jpg",
+  "/Images/cargo-shipment-bg-img-2.jpg",
+  "/Images/chosejorny1.jpg",
+  "/Images/chosejorny2.jpg",
+  "/Images/contactpage.jpg",
+  "/Images/hero-bg.jpg",
+  "/Images/leading.jpg",
+  "/Images/chosejorny3.jpg",
+  "/Images/cargo-shipment-bg-img-2.jpg",
+  "/Images/chosejorny3.jpg",
 ];
 
 const Skiper30 = () => {
