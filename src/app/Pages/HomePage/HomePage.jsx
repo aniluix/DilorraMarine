@@ -736,7 +736,7 @@ function HomePage() {
           </Row>
         </Container>
       </section>
-      <Skiper30 />
+     {/*  <Skiper30 /> */}
       <Portfolio />
       
       <OurTeams />
