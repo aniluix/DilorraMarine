@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/dilorramarine/public_html/
-    - /bin/rsync -avz --exclude='.git*' --exclude='.cpanel.yml' ./out/ $DEPLOYPATH
+    - export DEPLOYPATH=/home/dilorramarine/public_html
+    - /bin/rsync -avz --delete --exclude='.git*' --exclude='.cpanel.yml' ./out/ $DEPLOYPATH/
