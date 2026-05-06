@@ -1,0 +1,104 @@
+
+
+
+/* Skiper30.css */
+.skiper-root {
+  width: 100%;
+  background: #eee;
+  color: #000;
+  overflow-x: hidden;
+  font-family: "Inter", "system-ui", -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+/* helper message (top and bottom) */
+.skiper-message {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.skiper-message-inner {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+.skiper-hint {
+  display: inline-block;
+  max-width: 12ch;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  opacity: 0.4;
+  position: relative;
+  line-height: 1.1;
+}
+.skiper-hint::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  transform: translateX(-50%);
+  height: 64px;
+  width: 1px;
+  background: linear-gradient(to bottom, rgba(255,255,255,0.0), rgba(0,0,0,0.4));
+}
+
+/* Gallery (the long scroller) */
+.skiper-gallery {
+  position: relative;
+  display: flex;
+  gap: 2vw;
+  box-sizing: border-box;
+  padding: 2vw;
+  height: 175vh; /* as original */
+  background: #fff;
+  overflow: hidden;
+}
+
+/* Each column: roughly 25% width, min width to keep layout */
+.skiper-column {
+  position: relative;
+  top: -45%;
+  display: flex;
+  flex-direction: column;
+  gap: 2vw;
+  flex: 1 1 25%;
+  min-width: 250px;
+  box-sizing: border-box;
+}
+
+/* If you want to emulate different vertical offsets like the original's :nth-child rules,
+   you can tweak them here */
+.skiper-gallery .skiper-column:nth-child(1) { top: -45%; }
+.skiper-gallery .skiper-column:nth-child(2) { top: -95%; }
+.skiper-gallery .skiper-column:nth-child(3) { top: -45%; }
+.skiper-gallery .skiper-column:nth-child(4) { top: -75%; }
+
+.skiper-card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  min-height: 300px; /* adjust as needed */
+  display: block;
+}
+
+.skiper-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  pointer-events: none;
+}
+
+/* responsive tweaks */
+@media (max-width: 900px) {
+  .skiper-gallery {
+    gap: 12px;
+    padding: 12px;
+  }
+  .skiper-card { min-height: 180px; }
+}

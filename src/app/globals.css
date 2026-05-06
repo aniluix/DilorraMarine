@@ -1,6 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --blue:#1b79ab;
+  --golden:#f7e6b2;
+  --white:#ffffff;
+  --blcktext:#333333;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -26,9 +32,10 @@ body {
   flex-direction: column;
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "League Spartan", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  cursor: none;
 }
 
 * {
@@ -39,11 +46,323 @@ body {
 
 a {
   color: inherit;
-  text-decoration: none;
+  text-decoration: none !important;
+}
+button{
+  box-shadow: none !important;
 }
 
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
+}
+h1,h2,h3,h4,h5,h6 {
+  margin: 0 !important;
+  font-family: "League Spartan", sans-serif;
+}
+p{
+  margin: 0 !important;
+  font-family: "Plus Jakarta Sans", sans-serif !important;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+/*-- Common Btn --*/
+.immiPressBtn {
+	position: relative;
+	overflow: hidden;
+	font-size: 18px !important;
+	font-weight: 500 !important;
+  min-width: 222px;
+	height: 58px;
+	line-height: 58px;
+	border-radius: 4px !important;
+	padding: 0 42px !important;
+	text-align: center;
+	border: none;
+	outline: none;
+	text-transform: capitalize;
+	display: inline-block;
+	background: var(--blue) !important;
+  border: none !important;
+	color: var(--white) !important;
+	z-index: 2;
+	-webkit-transition: all ease 0.3s;
+	-moz-transition: all ease 0.3s;
+	transition: all ease 0.3s;
+
+	&::before,
+	&::after,
+	& span::before,
+	span::after {
+		content: "";
+		position: absolute;
+		top: 0;
+		width: 25.25%;
+		height: 0;
+		background: var(--golden);
+		z-index: -1;
+		-webkit-transition: 0.3s ease-in-out;
+		-moz-transition: 0.3s ease-in-out;
+		transition: 0.3s ease-in-out;
+	}
+	span::before,
+	span::after {
+		content: "";
+		position: absolute;
+		top: 0;
+		width: 25.25%;
+		height: 0;
+		background: var(--golden);
+		z-index: -1;
+		-webkit-transition: 0.3s ease-in-out;
+		-moz-transition: 0.3s ease-in-out;
+		transition: 0.3s ease-in-out;
+	}
+	&::before {
+		left: 0;
+	}
+	&::after {
+		left: 50%;
+	}
+	span::before,
+	span::after {
+		top: auto;
+		bottom: 0;
+	}
+	span::before {
+		left: 25%;
+	}
+	span::after {
+		left: 75%;
+	}
+	&:hover::before,
+	&:hover::after,
+	&:hover span::before,
+	&:hover span::after {
+		height: 100%;
+	}
+	&:hover {
+		color: #000000 !important;
+	}
+}
+
+
+
+
+
+/* Skiper30.css */
+.skiper-root {
+  width: 100%;
+  background: #eee;
+  color: #000;
+  overflow-x: hidden;
+  font-family: "Inter", "system-ui", -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+/* helper message (top and bottom) */
+.skiper-message {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.skiper-message-inner {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+.skiper-hint {
+  display: inline-block;
+  max-width: 12ch;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  opacity: 0.4;
+  position: relative;
+  line-height: 1.1;
+}
+.skiper-hint::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  transform: translateX(-50%);
+  height: 64px;
+  width: 1px;
+  background: linear-gradient(to bottom, rgba(255,255,255,0.0), rgba(0,0,0,0.4));
+}
+
+/* Gallery (the long scroller) */
+.skiper-gallery {
+  position: relative;
+  display: flex;
+  gap: 2vw;
+  box-sizing: border-box;
+  padding: 2vw;
+  height: 175vh; /* as original */
+  background: #fff;
+  overflow: hidden;
+}
+
+/* Each column: roughly 25% width, min width to keep layout */
+.skiper-column {
+  position: relative;
+  top: -45%;
+  display: flex;
+  flex-direction: column;
+  gap: 2vw;
+  flex: 1 1 25%;
+  min-width: 250px;
+  box-sizing: border-box;
+}
+
+/* If you want to emulate different vertical offsets like the original's :nth-child rules,
+   you can tweak them here */
+.skiper-gallery .skiper-column:nth-child(1) { top: -45%; }
+.skiper-gallery .skiper-column:nth-child(2) { top: -95%; }
+.skiper-gallery .skiper-column:nth-child(3) { top: -45%; }
+.skiper-gallery .skiper-column:nth-child(4) { top: -75%; }
+
+.skiper-card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  min-height: 300px; /* adjust as needed */
+  display: block;
+}
+
+.skiper-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  pointer-events: none;
+}
+
+/* responsive tweaks */
+@media (max-width: 900px) {
+  .skiper-gallery {
+    gap: 12px;
+    padding: 12px;
+  }
+  .skiper-card { min-height: 180px; }
+}
+
+
+
+
+/* Pulsating Play Button
+------------------------------*/
+.pulsating-play-btn {
+  width: 150px;
+  height: 150px;
+  /* background: radial-gradient(var(--PurpleBg) 50%, color-mix(in srgb, var(--PurpleBg), transparent 75%) 52%); */
+  background: radial-gradient(#d7d7d7 50%, color-mix(in srgb, #c5c5c5, transparent 75%) 52%);
+  border-radius: 50%;
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.pulsating-play-btn:before {
+  content: "";
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  animation-delay: 0s;
+  animation: pulsate-play-btn 2s;
+  animation-direction: forwards;
+  animation-iteration-count: infinite;
+  animation-timing-function: steps;
+  opacity: 1;
+  border-radius: 50%;
+  border: 5px solid color-mix(in srgb, #008C94, transparent 30%);
+  top: 0;
+  left: 0;
+  background: rgba(198, 16, 0, 0);
+}
+
+.pulsating-play-btn:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-40%) translateY(-50%);
+  width: 0;
+  height: 0;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-left: 20px solid #001853;
+  z-index: 100;
+  transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.pulsating-play-btn:hover:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-40%) translateY(-50%);
+  width: 0;
+  height: 0;
+  border: none;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 15px solid #001853;
+  z-index: 200;
+  animation: none;
+  border-radius: 0;
+}
+
+.pulsating-play-btn:hover:after {
+  border-left: 15px solid #00000036;
+  transform: scale(20);
+}
+
+@keyframes pulsate-play-btn {
+  0% {
+    transform: scale(0.6, 0.6);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1, 1);
+    opacity: 0;
+  }
+}
+
+/* DemoVideos Ended  */
+
+/* Breadcrums  */
+.PageBreadcrums .breadcrumb{
+  margin: 0;
+}
+.PageBreadcrums .breadcrumb .breadcrumb-item a{
+  color: #fff;
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 0;
+}
+.PageBreadcrums .breadcrumb .breadcrumb-item.active{
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+}
+.breadcrumb-item + .breadcrumb-item:before{
+  color: var(--blue) !important;
 }
