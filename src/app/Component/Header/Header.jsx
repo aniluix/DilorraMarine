@@ -73,9 +73,9 @@ function Header() {
                     <Icon icon="material-symbols:mail" width="24" height="24" />{" "}
                     info@dilorramarine.com
                   </Link>
-                  <Link href="tel:+16134836285">
+                  <Link href="tel:+16134848105">
                     <Icon icon="ic:baseline-phone" width="24" height="24" />
-                    +1 (613) 483-6285
+                    +1 (613) 484-8105
                   </Link>
                 </div>
                 <div className="social_links">

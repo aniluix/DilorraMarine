@@ -41,9 +41,9 @@ function Contactus() {
                 <Link href="mailto:info@dilorramarine.com">
                   <strong>Email:</strong> info@dilorramarine.com
                 </Link>
-                <Link href="tel:+19024035633">
+                {/* <Link href="tel:+19024035633">
                   <strong>Phone:</strong> +1 (902) 403-5633
-                </Link>
+                </Link> */}
               </div>
 
               <div className="TouchAdrss">
@@ -56,8 +56,8 @@ function Contactus() {
                 <Link href="mailto:info@dilorramarine.com">
                   <strong>Email:</strong> info@dilorramarine.com
                 </Link>
-                <Link href="tel:+16134836285">
-                  <strong>Phone:</strong> +1 (613) 483-6285
+                <Link href="tel:+1 (613) 484-8105">
+                  <strong>Phone:</strong> +1 (613) 484-8105
                 </Link>
               </div>
             </div>

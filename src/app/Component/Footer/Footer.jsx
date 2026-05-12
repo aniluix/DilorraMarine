@@ -27,7 +27,7 @@ function Footer() {
                 </span>
                 <div className="s">
                   <p>FEEL FREE TO CALL US</p>
-                  <Link href="tel:+16134836285">+1 (613) 483-6285</Link>
+                  <Link href="tel:+16134848105">+1 (613) 484-8105</Link>
                 </div>
               </div>
             </div>
@@ -234,14 +234,14 @@ function Footer() {
                         />{" "}
                         info@dilorramarine.com{" "}
                       </Link>
-                      <Link href="tel:+16134836285">
+                      <Link href="tel:+16134848105">
                         <Icon
                           icon="ic:baseline-phone"
                           className="rise-shake"
                           width="24"
                           height="24"
                         />{" "}
-                        +1 (613) 483-6285{" "}
+                        +1 (613) 484-8105{" "}
                       </Link>
                     </div>
                   </div>
