@@ -3,257 +3,76 @@ import "./Footer.css";
 import { Col, Container, Form, Row } from "react-bootstrap";
 import { Icon } from "@iconify/react";
 import Link from "next/link";
+import Image from "next/image";
+import { FaChevronRight, FaClock, FaFacebookF, FaInstagram, FaLinkedinIn, FaLocationDot, FaTwitter } from "react-icons/fa6";
+import { MdEmail } from "react-icons/md";
+import { FaPhoneAlt } from "react-icons/fa";
+
+
+
 
 function Footer() {
   return (
     <>
-      <footer className="footer-section">
-        <div className="FooterSecData">
-          <Container fluid className="container-xl">
-            <div className="footer-insta-widget">
-              <div className="lft">
-                <h3>
-                  Let&apos;s Get Started With Us, <br /> Further Info & Support
-                  Team
-                </h3>
-              </div>
-              <div className="Ryt">
-                <span>
-                  <Icon
-                    icon="teenyicons:headset-solid"
-                    width="52"
-                    height="52"
-                  />
-                </span>
-                <div className="s">
-                  <p>FEEL FREE TO CALL US</p>
-                  <Link href="tel:+16134848105">+1 (613) 484-8105</Link>
+      <footer id="footer">
+        <div className="container">
+          <div className="footer-top">
+            <div className="footer-brand">
+              <Link className="footer-logo" href="/">
+                <Image src="/Images/Logo.png" alt="Logo"  width={100} height={100}/>
+                <div className="footer-logo-text">
+                  <span className="brand">DILORRA MARINE</span>
+                  <span className="tagline">Global Marine Logistics</span>
                 </div>
+              </Link>
+              <p className="footer-desc">Delivering reliable marine logistics and shipping solutions across Canada and international waters. Built on expertise, trust, and a relentless commitment to excellence.</p>
+              <div className="footer-social">
+                <Link href="#" className="social-link"><FaLinkedinIn /></Link>
+                <Link href="#" className="social-link"><FaFacebookF /></Link>
+                <Link href="#" className="social-link"><FaTwitter /></Link>
+                <Link href="#" className="social-link"><FaInstagram /></Link>
               </div>
             </div>
-          </Container>
-          <div className="footer-widgets-wrap">
-            <Container fluid className="container-xl">
-              <Row>
-                <Col md={6}>
-                  <div
-                    className="footer-widget-Div"
-                    style={{ paddingRight: "40px" }}
-                  >
-                    <h3>
-                      News Letter{" "}
-                      <Icon
-                        icon="emojione-monotone:ship"
-                        width="20"
-                        height="20"
-                      />
-                    </h3>
-                    <p>
-                      Join our newsletter community to receive regular updates{" "}
-                      <br />
-                      on the topics that matter to you.
-                    </p>
-                    <div className="suprtinpt">
-                      <Form.Control type="email" placeholder="Email Adress" />
-                      <Icon
-                        icon="streamline:send-email"
-                        width="16"
-                        height="16"
-                        color="#ec264f"
-                      />
-                    </div>
-                  </div>
-                </Col>
-                {/* <Col md={2}>
-                  <div className="footer-widget-Div">
-                    <h3>
-                      Visa{" "}
-                      <Icon
-                        icon="emojione-monotone:ship"
-                        width="20"
-                        height="20"
-                      />
-                    </h3>
-                    <ul className="FooterMenu">
-                      <li>
-                        <Link href="#">
-                          <Icon
-                            className="rise-shake"
-                            icon="tdesign:gesture-right-filled"
-                            width="24"
-                            height="24"
-                          />{" "}
-                          Migration Visas
-                        </Link>{" "}
-                      </li>
-                      <li>
-                        <Link href="#">
-                          <Icon
-                            className="rise-shake"
-                            icon="tdesign:gesture-right-filled"
-                            width="24"
-                            height="24"
-                          />{" "}
-                          Diplomatic Visa
-                        </Link>{" "}
-                      </li>
-                      <li>
-                        <Link href="#">
-                          <Icon
-                            className="rise-shake"
-                            icon="tdesign:gesture-right-filled"
-                            width="24"
-                            height="24"
-                          />{" "}
-                          Residence Visa
-                        </Link>{" "}
-                      </li>
-                      <li>
-                        <Link href="#">
-                          <Icon
-                            className="rise-shake"
-                            icon="tdesign:gesture-right-filled"
-                            width="24"
-                            height="24"
-                          />{" "}
-                          Student Visa
-                        </Link>{" "}
-                      </li>
-                      <li>
-                        <Link href="#">
-                          <Icon
-                            className="rise-shake"
-                            icon="tdesign:gesture-right-filled"
-                            width="24"
-                            height="24"
-                          />{" "}
-                          Business Visa
-                        </Link>{" "}
-                      </li>
-                      <li>
-                        <Link href="#">
-                          <Icon
-                            className="rise-shake"
-                            icon="tdesign:gesture-right-filled"
-                            width="24"
-                            height="24"
-                          />{" "}
-                          Tourist Visa
-                        </Link>{" "}
-                      </li>
-                    </ul>
-                  </div>
-                </Col> */}
-
-                <Col md={2}>
-                  <div className="footer-widget-Div">
-                    <h3>
-                      Quick Links{" "}
-                      <Icon
-                        icon="emojione-monotone:ship"
-                        width="20"
-                        height="20"
-                      />
-                    </h3>
-                    <ul className="FooterMenu">
-                      <li>
-                        <Link href="#">
-                          <Icon
-                            className="rise-shake"
-                            icon="tdesign:gesture-right-filled"
-                            width="24"
-                            height="24"
-                          />{" "}
-                          Home
-                        </Link>{" "}
-                      </li>
-                      <li>
-                        <Link href="#">
-                          <Icon
-                            className="rise-shake"
-                            icon="tdesign:gesture-right-filled"
-                            width="24"
-                            height="24"
-                          />{" "}
-                          About Us
-                        </Link>{" "}
-                      </li>
-                      <li>
-                        <Link href="#">
-                          <Icon
-                            className="rise-shake"
-                            icon="tdesign:gesture-right-filled"
-                            width="24"
-                            height="24"
-                          />{" "}
-                          Our Services
-                        </Link>{" "}
-                      </li>
-                      <li>
-                        <Link href="#">
-                          <Icon
-                            className="rise-shake"
-                            icon="tdesign:gesture-right-filled"
-                            width="24"
-                            height="24"
-                          />{" "}
-                          Contact Us
-                        </Link>{" "}
-                      </li>
-                    </ul>
-                  </div>
-                </Col>
-
-                <Col md={4}>
-                  <div
-                    className="footer-widget-Div"
-                    style={{ paddingLeft: "40px" }}
-                  >
-                    <h3>
-                      Contact Info{" "}
-                      <Icon
-                        icon="emojione-monotone:ship"
-                        width="20"
-                        height="20"
-                      />
-                    </h3>
-                    <div className="loctdiv">
-                      <Link href="#">
-                        <Icon icon="mdi:locations" width="24" height="24" /> 577
-                        Marginal Rd, Halifax, NS B3H 4P6{" "}
-                      </Link>
-                      <Link href="#">
-                        <Icon icon="mdi:locations" width="24" height="24" /> 16
-                        Bath Rd, Kingston, ON K7L 1H4{" "}
-                      </Link>
-                      <Link href="mailto:info@dilorramarine.com">
-                        <Icon
-                          icon="iconoir:mail-solid"
-                          width="24"
-                          height="24"
-                        />{" "}
-                        info@dilorramarine.com{" "}
-                      </Link>
-                      <Link href="tel:+16134848105">
-                        <Icon
-                          icon="ic:baseline-phone"
-                          className="rise-shake"
-                          width="24"
-                          height="24"
-                        />{" "}
-                        +1 (613) 484-8105{" "}
-                      </Link>
-                    </div>
-                  </div>
-                </Col>
-              </Row>
-            </Container>
+            <div className="footer-col">
+              <h4>Quick Links</h4>
+              <ul>
+                <li><Link href="#about"> <FaChevronRight /> About Us</Link></li>
+                <li><Link href="#services"> <FaChevronRight /> Services</Link></li>
+                <li><Link href="#why"> <FaChevronRight /> Why Choose Us</Link></li>
+                <li><Link href="#offices"> <FaChevronRight /> Our Offices</Link></li>
+                <li><Link href="#testimonials"> <FaChevronRight /> Testimonials</Link></li>
+                <li><Link href="#contact"> <FaChevronRight /> Contact Us</Link></li>
+              </ul>
+            </div>
+            <div className="footer-col">
+              <h4>Services</h4>
+              <ul>
+                <li><Link href="#services"> <FaChevronRight /> Ocean Freight</Link></li>
+                <li><Link href="#services"> <FaChevronRight /> Cargo Management</Link></li>
+                <li><Link href="#services"> <FaChevronRight /> Marine Logistics</Link></li>
+                <li><Link href="#services"> <FaChevronRight /> Port Operations</Link></li>
+                <li><Link href="#services"> <FaChevronRight /> Vessel Support</Link></li>
+                <li><Link href="#services"> <FaChevronRight /> International Shipping</Link></li>
+              </ul>
+            </div>
+            <div className="footer-col">
+              <h4>Contact</h4>
+              <ul>
+                <li><Link href="#"> <FaLocationDot /> Halifax, NS B3H 4P6</Link></li>
+                <li><Link href="#"> <FaLocationDot /> Kingston, ON K7L 1H4</Link></li>
+                <li><Link href="mailto:info@dilorramarine.com"> <MdEmail /> info@dilorramarine.com</Link></li>
+                <li><Link href="tel:+16134848105"> <FaPhoneAlt /> +1 (613) 484-8105</Link></li>
+                <li><Link href="#"> <FaClock /> 24/7 Operations</Link></li>
+              </ul>
+            </div>
           </div>
-          <div className="footer-bottom-wrap">
-            <p>
-              © Copyright 2025. All rights reserved <span>Dilorra Marine.</span>
-              . Designed by <Link target="_blank" href="https://anilkuix.lovable.app">Anil Kumar</Link>
-            </p>
+          <div className="footer-bottom">
+            <div className="footer-copy">&copy; 2024 <span>Dilorra Marine</span>. All rights reserved. Built with excellence for global trade.</div>
+            <div className="footer-legal">
+              <Link href="#">Privacy Policy</Link>
+              <Link href="#">Terms of Service</Link>
+              <Link href="#">Sitemap</Link>
+            </div>
           </div>
         </div>
       </footer>
