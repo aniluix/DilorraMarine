@@ -69,9 +69,9 @@ function Footer() {
           <div className="footer-bottom">
             <div className="footer-copy">&copy; 2024 <span>Dilorra Marine</span>. All rights reserved. Built with excellence for global trade.</div>
             <div className="footer-legal">
-              <Link target="_blank" href="/privacypolicy">Privacy Policy</Link>
-              <Link target="_blank" href="/terms&services">Terms of Service</Link>
-              <Link target="_blank" href="/sitemap">Sitemap</Link>
+              <Link target="_blank" href="/Pages/PrivacyPolicy">Privacy Policy</Link>
+              <Link target="_blank" href="/Pages/Terms&Condition">Terms of Service</Link>
+              <Link target="_blank" href="/Pages/Sitemap">Sitemap</Link>
             </div>
           </div>
         </div>

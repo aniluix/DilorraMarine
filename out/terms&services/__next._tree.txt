@@ -1,0 +1,5 @@
+:HL["/_next/static/chunks/0i2~1xo.mrp7x.css","style"]
+:HL["/_next/static/chunks/04za3hu5nilvo.css","style"]
+:HL["/_next/static/chunks/0hdn1g8.0grwc.css","style"]
+:HL["/_next/static/chunks/0dds67xfxfunm.css","style"]
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"(routes)","param":null,"prefetchHints":0,"slots":{"children":{"name":"terms&services","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"gDDPYiUjjUpSPBy7aKsWB"}
