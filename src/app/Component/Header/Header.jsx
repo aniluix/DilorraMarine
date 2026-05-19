@@ -35,7 +35,7 @@ function Header() {
       <nav id="navbar" className={isScrolled ? "scrolled" : ""}>
         <div className="container">
           <div className="nav-inner">
-            <Link className="nav-logo" href="#">
+            <Link className="nav-logo" href="/">
               <Image src="/Images/Logo.png" alt="Logo"  width={100} height={100}/>
               <div className="nav-logo-text">
                 <span className="brand">DILORRA MARINE</span>

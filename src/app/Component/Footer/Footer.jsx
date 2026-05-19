@@ -27,10 +27,10 @@ function Footer() {
               </Link>
               <p className="footer-desc">Delivering reliable marine logistics and shipping solutions across Canada and international waters. Built on expertise, trust, and a relentless commitment to excellence.</p>
               <div className="footer-social">
-                <Link href="#" className="social-link"><FaLinkedinIn /></Link>
-                <Link href="#" className="social-link"><FaFacebookF /></Link>
-                <Link href="#" className="social-link"><FaTwitter /></Link>
-                <Link href="#" className="social-link"><FaInstagram /></Link>
+                <Link target="_blank" href="#" className="social-link"><FaLinkedinIn /></Link>
+                <Link target="_blank" href="https://www.facebook.com/dilorra.marine/" className="social-link"><FaFacebookF /></Link>
+                <Link target="_blank" href="#" className="social-link"><FaTwitter /></Link>
+                <Link target="_blank" href="#" className="social-link"><FaInstagram /></Link>
               </div>
             </div>
             <div className="footer-col">
@@ -69,9 +69,9 @@ function Footer() {
           <div className="footer-bottom">
             <div className="footer-copy">&copy; 2024 <span>Dilorra Marine</span>. All rights reserved. Built with excellence for global trade.</div>
             <div className="footer-legal">
-              <Link href="#">Privacy Policy</Link>
-              <Link href="#">Terms of Service</Link>
-              <Link href="#">Sitemap</Link>
+              <Link target="_blank" href="/privacypolicy">Privacy Policy</Link>
+              <Link target="_blank" href="/terms&services">Terms of Service</Link>
+              <Link target="_blank" href="/sitemap">Sitemap</Link>
             </div>
           </div>
         </div>

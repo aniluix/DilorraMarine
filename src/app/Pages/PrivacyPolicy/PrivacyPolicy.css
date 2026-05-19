@@ -1,0 +1,155 @@
+.page-hero {
+      position: relative;
+      padding: 15rem 3rem 4rem;
+      background: linear-gradient(160deg, #0b1829 55%, #0f2740 100%);
+      overflow: hidden;
+    }
+    .page-hero::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: radial-gradient(ellipse 55% 70% at 75% 40%, rgba(201,151,58,.07) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .page-hero-inner { max-width: 860px; margin: 0 auto; position: relative; }
+    .page-badge {
+      display: inline-block;
+      border: 1px solid var(--border);
+      color: var(--gold); font-size: .72rem; letter-spacing: .16em;
+      text-transform: uppercase; padding: .35rem .9rem; border-radius: 2px;
+      margin-bottom: 1.4rem;
+      background: rgba(201,151,58,.06);
+    }
+    .page-hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 700; line-height: 1.18;
+      color: var(--white); margin-bottom: 1rem;
+    }
+    .page-hero p { color: var(--muted); font-size: 1rem; max-width: 620px; }
+    .page-hero-meta {
+      display: flex; gap: 2rem; margin-top: 2rem;
+      font-size: .8rem; color: var(--muted);
+    }
+    .page-hero-meta span { display: flex; align-items: center; gap: .4rem; }
+    .page-hero-meta span::before { content: '—'; color: var(--gold); }
+    .divider-line {
+      height: 2px;
+      background: linear-gradient(90deg, var(--gold) 0%, transparent 70%);
+      margin-top: 3rem;
+    }
+
+/* ── CONTENT LAYOUT ── */
+.Policy-content-wrap {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 4rem 3rem 6rem;
+}
+
+/* TOC */
+.toc {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--gold);
+  border-radius: 4px;
+  padding: 1.6rem 2rem;
+  margin-bottom: 3.5rem;
+}
+.toc h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 1rem;
+  color: var(--gold);
+  margin-bottom: 1rem;
+  letter-spacing: 0.04em;
+}
+.toc ol {
+  padding-left: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+.toc ol li a {
+  text-decoration: none;
+  color: var(--muted);
+  font-size: 0.88rem;
+  transition: color 0.2s;
+}
+.toc ol li a:hover {
+  color: var(--gold-lt);
+}
+
+/* Sections */
+.section {
+  margin-bottom: 3rem;
+}
+.section-number {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 0.5rem;
+}
+.section h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.45rem;
+  font-weight: 600;
+  color: var(--white);
+  margin-bottom: 1rem;
+  padding-bottom: 0.65rem;
+  border-bottom: 1px solid var(--border);
+}
+.section p,
+.section li {
+  color: var(--muted);
+  font-size: 0.95rem;
+  margin-bottom: 0.7rem;
+}
+.section ul,
+.section ol {
+  padding-left: 1.4rem;
+  margin-bottom: 0.7rem;
+}
+.section li {
+  margin-bottom: 0.4rem;
+}
+.section strong {
+  color: var(--white);
+  font-weight: 500;
+}
+
+/* Highlight box */
+.highlight-box {
+  background: rgba(201, 151, 58, 0.07);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--gold);
+  border-radius: 4px;
+  padding: 1.1rem 1.4rem;
+  margin: 1.2rem 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+/* Rights grid */
+.rights-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin: 1.2rem 0;
+}
+.rights-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 1rem 1.2rem;
+}
+.rights-card h4 {
+  color: var(--gold-lt);
+  font-size: 0.85rem;
+  margin-bottom: 0.4rem;
+  font-weight: 600;
+}
+.rights-card p {
+  color: var(--muted);
+  font-size: 0.82rem;
+  margin: 0;
+}

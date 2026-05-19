@@ -1,0 +1,204 @@
+.page-hero {
+  position: relative;
+  padding: 15rem 3rem 4rem;
+  background: linear-gradient(160deg, #0b1829 55%, #112f52 100%);
+  overflow: hidden;
+}
+.page-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    ellipse 60% 60% at 80% 50%,
+    rgba(201, 151, 58, 0.08) 0%,
+    transparent 70%
+  );
+  pointer-events: none;
+}
+.page-hero-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  position: relative;
+}
+.page-badge {
+  display: inline-block;
+  border: 1px solid var(--border);
+  color: var(--gold);
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  padding: 0.35rem 0.9rem;
+  border-radius: 2px;
+  margin-bottom: 1.4rem;
+  background: rgba(201, 151, 58, 0.06);
+}
+.page-hero h1 {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 700;
+  line-height: 1.18;
+  color: var(--white);
+  margin-bottom: 1rem;
+}
+.page-hero p {
+  color: var(--muted);
+  font-size: 1rem;
+  max-width: 580px;
+}
+.divider-line {
+  height: 2px;
+  background: linear-gradient(90deg, var(--gold) 0%, transparent 70%);
+  margin-top: 3rem;
+}
+/* ── CONTENT ── */
+.content-wrap {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 4rem 3rem 6rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+/* Full-width cards */
+.full {
+  grid-column: 1 / -1;
+}
+
+/* Sitemap Card */
+.sm-card {
+  background: var(--card) ;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  overflow: hidden;
+  transition:
+    border-color 0.25s,
+    transform 0.25s;
+}
+.sm-card:hover {
+  border-color: rgba(201, 151, 58, 0.45);
+  transform: translateY(-2px);
+}
+
+.sm-card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1.2rem 1.6rem;
+  border-bottom: 1px solid var(--border);
+  background: rgba(201, 151, 58, 0.04);
+}
+.sm-icon {
+  width: 34px;
+  height: 34px;
+  flex-shrink: 0;
+  background: linear-gradient(135deg, var(--gold), var(--gold-lt));
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sm-icon svg {
+  width: 16px;
+  height: 16px;
+  fill: var(--navy);
+}
+.sm-card-header h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--white);
+}
+.sm-card-header p {
+  font-size: 0.75rem;
+  color: var(--muted);
+  margin-top: 0.1rem;
+}
+
+.sm-links {
+  list-style: none;
+  padding: 1rem 1.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+.sm-links li a {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  text-decoration: none;
+  color: var(--muted);
+  font-size: 0.88rem;
+  padding: 0.45rem 0.5rem;
+  border-radius: 4px;
+  transition:
+    color 0.2s,
+    background 0.2s;
+}
+.sm-links li a:hover {
+  color: var(--gold-lt);
+  background: rgba(201, 151, 58, 0.06);
+}
+.sm-links li a .link-arrow {
+  margin-left: auto;
+  opacity: 0;
+  font-size: 0.7rem;
+  color: var(--gold);
+  transition:
+    opacity 0.2s,
+    transform 0.2s;
+  transform: translateX(-4px);
+}
+.sm-links li a:hover .link-arrow {
+  opacity: 1;
+  transform: translateX(0);
+}
+.sm-links li a .link-dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--gold);
+  flex-shrink: 0;
+  opacity: 0.7;
+}
+
+/* Sub-links (page sections) */
+.sm-links .sub {
+  padding-left: 1.2rem;
+}
+.sm-links .sub a {
+  font-size: 0.82rem;
+  color: rgba(143, 163, 191, 0.7);
+}
+.sm-links .sub a:hover {
+  color: var(--gold-lt);
+}
+.sm-links .sub .link-dot {
+  background: var(--muted);
+  opacity: 0.4;
+}
+
+/* XML note */
+.xml-note {
+  background: rgba(201, 151, 58, 0.05) !important;
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--gold);
+  border-radius: 4px;
+  padding: 1rem 1.4rem;
+  font-size: 0.85rem;
+  color: var(--muted);
+  display: flex;
+  gap: 0.8rem;
+  align-items: flex-start;
+}
+.xml-note strong {
+  color: var(--white);
+}
+.xml-note code {
+  background: rgba(201, 151, 58, 0.1) !important;
+  color: var(--gold-lt);
+  padding: 0.1rem 0.4rem;
+  border-radius: 3px;
+  font-size: 0.82rem;
+  font-family: "Courier New", monospace;
+}
